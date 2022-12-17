@@ -1,12 +1,15 @@
 {
-  "name": "react-notes",
+  "name": "react-notes-app",
   "private": true,
+  "homepage": "https://syedfayaz.github.io/react-notes-app",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
@@ -23,6 +26,7 @@
     "@types/react-dom": "^18.0.9",
     "@types/uuid": "^9.0.0",
     "@vitejs/plugin-react": "^3.0.0",
+    "gh-pages": "^4.0.0",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
   }
